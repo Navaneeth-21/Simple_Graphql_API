@@ -1,10 +1,10 @@
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
-import connectDB from "./db/connect.js";
+import connectDB from "./src/config/connect.js";
 import dotenv from "dotenv";
 dotenv.config();
-import typeDefs from "./graphql/typedefs.js";
-import resolvers from "./graphql/resolvers.js";
+import typeDefs from "./src/graphql/typedefs.js";
+import resolvers from "./src/graphql/resolvers.js";
 
 // creating the apollo server
 const server = new ApolloServer({

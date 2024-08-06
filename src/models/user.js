@@ -1,4 +1,3 @@
-// const { Schema, default: mongoose } = require("mongoose");
 import {mongoose,Schema} from "mongoose";
 
 const createSchema = new Schema({
