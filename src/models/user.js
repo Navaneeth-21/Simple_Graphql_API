@@ -1,4 +1,5 @@
 import {mongoose,Schema} from "mongoose";
+import joi from "joi";
 
 const createSchema = new Schema({
     name : String,
@@ -7,7 +8,23 @@ const createSchema = new Schema({
     CreatedAt : String
 });
 
+const user = mongoose.model('graphql' , createSchema)
 
-const model = mongoose.model('graphql' , createSchema)
+// Validation
 
-export default model;
+// define a function that validates the user details
+function validateCreateUser(data) {
+    const schema = joi.object({
+        name : joi.string().min(3).max(20).required(),
+        description : joi.string().max(40).required(),
+        age : joi.number().required()
+    });
+
+    return schema.validate(data)
+};
+
+
+export {
+    user,
+    validateCreateUser
+};

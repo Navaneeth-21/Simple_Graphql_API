@@ -14,6 +14,7 @@ const typeDefs = gql`
     description: String!
     age: Int!
   }
+  
   input editUserInput {
     name: String
     description: String
