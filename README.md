@@ -9,4 +9,30 @@
  - Joi(User validation)
  - MongoDB
 
+### Getting Started
+
+
+### Prerequisites
+
+- Node.js and npm installed
+
+  
+### Setup
+ 1) clone the repository
+ 2) Install all the dependencies
+
+        npm install
+ 3) Create a `.env` file in the root directory with the following content:
+    ```env
+    MONGOURI=mongodb://localhost:27017/worko
+    ```
+
+4) Start the server
+    ```sh
+    npm  start
+    ```
+5) You can see the *http://localhost:4000* in your terminal
+6) Navigate to the port to run the Apollo server
+7) And Perform the CRUD operations you want. 
+
 
