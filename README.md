@@ -29,7 +29,7 @@
 
 4) Start the server
     ```sh
-    npm  start
+    npm run start
     ```
 5) You can see the *http://localhost:4000* in your terminal
 6) Navigate to the port to run the Apollo server
