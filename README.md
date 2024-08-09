@@ -24,7 +24,7 @@
         npm install
  3) Create a `.env` file in the root directory with the following content:
     ```env
-    MONGOURI=mongodb://localhost:27017/worko
+    MONGOURI='Your mongodb uri string'
     ```
 
 4) Start the server
